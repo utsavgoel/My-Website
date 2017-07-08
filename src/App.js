@@ -1,12 +1,8 @@
 import React, { Component } from 'react'
-import { Menu, Segment, Icon, Image, Card, Button } from 'semantic-ui-react'
+import { Segment,Image, Card, Button } from 'semantic-ui-react'
 import utsav from './images/img.png' 
 import './App.css'
-import Particles from 'react-particles-js';
-import { Parallax, Background } from 'react-parallax';
 import TypeWriter from 'react-typewriter';
-import Typing from 'react-typing-animation';
-import img1 from './images/dark.jpg';
 import ReactRevealText from 'react-reveal-text';
 let hover;
 const intro = () =>
@@ -23,25 +19,24 @@ const intro = () =>
 
 const contact= () =>
   (   
-
-    <div>  
-      
-      <p style={{marginTop:'5%',fontSize:'25px', textAlign:'center', color:'black'}}>
+    <div>
+    <div style={{ textAlign:'center',marginLeft:'auto',marginRight:'auto',width:'80%'}}>  
+      <br></br>
+      <p style={{marginTop:'5%',fontSize:'25px'}}>
       Lets Get in touch
       </p>
 
-      <p style={{fontSize:'18px', textAlign:'center', color:'black'}}>
+      <p style={{fontSize:'18px'}}>
             I'm always looking to connect and chat with new people.
         <br></br>Feel free to reach out.
       </p>
-
-      <div style={{textAlign:'center', marginTop:'4%'}}>
+    </div>
+      <div style={{textAlign:'center', marginTop:'25px'}}>
         <Button style={{border: '5px double white'}} circular size='big' color='linkedin' icon='linkedin' href="https://www.linkedin.com/in/utsav-goel-a0040b125/" target="_blank" />
         <Button style={{border: '5px double white',marginLeft:'15px'}} circular size='big' color='black' icon='github' href="https://github.com/utsavgoel" target="_blank" />
         <Button style={{border: '5px double white',marginLeft:'15px'}} circular size='big' color='facebook' icon='facebook f' href="https://www.facebook.com/goelutsav" target="_blank"/>
-        <Button style={{border: '5px double white',marginLeft:'15px'}} circular size='big' color='red' icon='file text' href="https://github.com/utsavgoel" target="_blank"/>
+        <Button style={{border: '5px double white',marginLeft:'15px'}} circular size='big' color='red' icon='file text' href="" target="_blank"/>
       </div>
-
     </div>
   )
 
@@ -84,13 +79,13 @@ export default class MenuExampleInvertedSecondary extends Component {
         <Image src={utsav} style={{
              backgroundRepeat: 'no-repeat',
              float: 'left',
-             width: '4%',
+             width: '50px',
              height: '150%',
              borderRadius: '50%',
-             marginTop: '-1%',
-             marginLeft: '2%',
+             marginTop: '-5px',
+             marginLeft: '10px',
              boxShadow: '0px 0px 2px #232323'}}/> 
-       <p style={{fontSize:'1.5em', paddingLeft:'7%'}}> Utsav Goel</p>
+       <p style={{fontSize:'1.5em', paddingLeft:'4em'}}> Utsav Goel</p>
     
       </Segment>
         
@@ -102,7 +97,7 @@ export default class MenuExampleInvertedSecondary extends Component {
        
       {intro()}
       
-      <Card raised='true'  style={{width:'70%',marginLeft:'auto',marginRight:'auto',textAlign:'center'}}
+      <Card raised style={{width:'70%',marginLeft:'auto',marginRight:'auto',textAlign:'center'}}
      header='I am an undergraduate student in my penultimate year of Engineering at NSIT.'
       fluid color='red'
       meta='I am a Tech geek, loves developing apps and apart from development, I enjoy writing code which solves some real-world problems. My skill set includes Java & C/C++ and I am familiar with ES6 and ReactJS.'
@@ -112,7 +107,7 @@ export default class MenuExampleInvertedSecondary extends Component {
       {contact()} 
 
       <br></br>
-      <p style={{fontSize:'12px', textAlign:'center'}}> This website is open-source. You can find it on my<a href=""> Github </a>. </p>
+      <p style={{fontSize:'12px', textAlign:'center'}}> This website is open-source. You can find it on my<a href="https://github.com/utsavgoel/My-Website"> Github </a>. </p>
       </div>
     )
   }
